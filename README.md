@@ -11,17 +11,19 @@ Since we know that the runtime of Python is somehow relatively slower than other
 ## Result in each threshold
 Here we use the three layer outputs obtained after conducting YOLO-v4 inference incl. <i>conv2d_58_Conv2D_YoloRegion</i>, <i>conv2d_66_Conv2D_YoloRegion</i>, and <i>conv2d_74_Conv2D_YoloRegion</i> to implement YOLO-v4 post-processing with C++.
 
+
 <div align="center">
   <p><strong>input image</strong></p>
-  <img src="https://github.com/userfromgithub/yolo-v4-postprocess/blob/main/build/obj_input.jpg" alt="thre99 image" style="display: block; margin: auto;"/>
+  <img src="./build/obj_input.jpg" alt="thre99 image" style="display: block; margin: auto;"/>
 </div>
 
 <p align="center"><strong>threshold 0.99</strong></p>
-<img src="https://github.com/userfromgithub/yolo-v4-postprocess/blob/main/drawing-results/Screenshot%20from%202023-08-30%2008-15-38.png" alt="thre99 image">
+<img src="./drawing-results/Screenshot%20from%202023-08-30%2008-15-38.png" alt="thre99 image">
 <p align="center"><strong>threshold 0.6</strong></p>
-<img src="https://github.com/userfromgithub/yolo-v4-postprocess/blob/main/drawing-results/Screenshot%20from%202023-08-30%2008-19-04.png" alt="thre60 image">
+<img src="./drawing-results/Screenshot%20from%202023-08-30%2008-19-04.png" alt="thre60 image">
 <p align="center"><strong>threshold 0.1</strong></p>
-<img src="https://github.com/userfromgithub/yolo-v4-postprocess/blob/main/drawing-results/Screenshot%20from%202023-08-30%2008-19-16.png" alt="thre10 image">
+<img src="./drawing-results/Screenshot%20from%202023-08-30%2008-19-16.png" alt="thre10 image">
+
 
 ## Performace metrics Python vs. C++ (time: millisecond)
 ### threshold 0.99
@@ -141,7 +143,7 @@ execute <i>post-process.cpp</i>
 
 ### Step 4.
 When the code successfully run, the result will be:
-<img src="https://github.com/userfromgithub/yolo-v4-postprocess/blob/main/drawing-results/Screenshot%20from%202023-08-31%2016-12-07.png" alt="thre99 image">
+<img src="./drawing-results/Screenshot%20from%202023-08-31%2016-12-07.png" alt="thre99 image">
 
 ## Reference
 https://superfastpython.com/what-is-blas-and-lapack-in-numpy/ <br>
